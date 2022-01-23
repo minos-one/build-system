@@ -6,4 +6,5 @@ echo "minos-one build system"
 
 # chapter 5
 ./binutils/build-000.sh
+./gcc/build.sh
 
