@@ -6,5 +6,12 @@ echo "minos-one build system"
 
 # chapter 5
 ./binutils/build-000.sh
-./gcc/build.sh
+./checksum.sh
+
+./gcc/build-000.sh
+./checksum.sh
+
+# linux headers
+./linux/build-000.sh
+./checksum.sh
 
