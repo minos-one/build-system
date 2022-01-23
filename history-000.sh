@@ -22,4 +22,9 @@ echo "minos-one build system"
 ./checksum.sh
 
 # chapter 6
+./m4/build-000.sh
+./checksum.sh
+
+./ncurses/build-000.sh
+./checksum.sh
 
