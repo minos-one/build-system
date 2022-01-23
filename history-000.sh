@@ -28,3 +28,17 @@ echo "minos-one build system"
 ./ncurses/build-000.sh
 ./checksum.sh
 
+./bash/build-000.sh
+./checksum.sh
+
+./coreutils/build-000.sh
+./checksum.sh
+
+./diffutils/build-000.sh
+./checksum.sh
+
+./file/build-000.sh
+./checksum.sh
+
+./findutils/build-000.sh
+./checksum.sh
