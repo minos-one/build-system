@@ -1,4 +1,16 @@
 #!/bin/bash
+# 
+# ----------------------------------------------------------------
+# script:      checksum.sh
+# title:       minos-one checksum script
+# description: Build linux from scratch with MD5 checksums. This
+#              script checks the filesystem by using MD5 checksums
+#              and stores it in the md5sums file. Further, it
+#              reports if a checksum has changed and stores the
+#              previous version in stamp-md5 subfolder.
+# author:      Joel Kraehemann
+# date:        Sun Jan 23 15:10:54 UTC 2022
+# ----------------------------------------------------------------
 
 LFS=/mnt/sda1/home/h3lix/workspace/mnt
 RBUILDS=/mnt/sda1/home/h3lix/workspace/rbuilds

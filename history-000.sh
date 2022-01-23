@@ -1,4 +1,15 @@
 #!/bin/bash
+# 
+# ----------------------------------------------------------------
+# script:      history-000.sh
+# title:       minos-one build system script #000
+# description: Build linux from scratch with MD5 checksums. This
+#              script is part of a larger collection of scripts.
+#              It depends on the individual packages build
+#              scripts located in sub-folders.
+# author:      Joel Kraehemann
+# date:        Sun Jan 23 15:10:54 UTC 2022
+# ----------------------------------------------------------------
 
 echo "minos-one build system"
 
@@ -42,3 +53,7 @@ echo "minos-one build system"
 
 ./findutils/build-000.sh
 ./checksum.sh
+
+./gawk/build-000.sh
+./checksum.sh
+
