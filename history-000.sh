@@ -18,3 +18,8 @@ echo "minos-one build system"
 ./glibc/build-000.sh
 ./checksum.sh
 
+./gcc/build-001.sh
+./checksum.sh
+
+# chapter 6
+
