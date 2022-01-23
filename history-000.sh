@@ -15,3 +15,6 @@ echo "minos-one build system"
 ./linux/build-000.sh
 ./checksum.sh
 
+./glibc/build-000.sh
+./checksum.sh
+
