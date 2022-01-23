@@ -11,15 +11,7 @@ cd $LFS/usr/src/sources
 curl -O https://www.linuxfromscratch.org/lfs/view/stable-systemd/wget-list
 curl -O https://www.linuxfromscratch.org/lfs/view/stable-systemd/md5sums
 
-mkdir -pv $LFS/{etc,var} $LFS/{bin,lib,sbin} $LFS/usr/{bin,lib,sbin}
-
-if [ "$(uname -m)" == "x86_64" ]; then
-    cd $LFS
-    ln -sv lib lib64
-
-    cd $LFS/usr
-    ln -sv lib lib64
-fi
+mkdir -pv $LFS/{etc,var} $LFS/{bin,lib,lib64,sbin} $LFS/usr/{bin,lib,lib64,sbin}
 
 groupadd h3lix
 useradd -s /bin/bash -g h3lix -m -k /dev/null h3lix
