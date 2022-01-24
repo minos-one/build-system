@@ -63,3 +63,6 @@ echo "minos-one build system"
 ./gzip/build-000.sh
 ./checksum.sh
 
+./make/build-000.sh
+./checksum.sh
+
