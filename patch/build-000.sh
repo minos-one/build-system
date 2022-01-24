@@ -2,14 +2,15 @@
 
 cd $LFS/usr/src/build
 
-tar -xxf $LFS/usr/src/sources/make-4.3.tar.gz 
+tar -xxf $LFS/usr/src/sources/patch-2.7.6.tar.xz 
 
-cd make-4.3
+cd patch-2.7.6
+
 
 ./configure --prefix=/usr   \
-            --without-guile \
             --host=$LFS_TGT \
             --build=$(build-aux/config.guess)
+
 
 make
 make DESTDIR=$LFS install

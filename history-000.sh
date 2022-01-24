@@ -66,3 +66,6 @@ echo "minos-one build system"
 ./make/build-000.sh
 ./checksum.sh
 
+./patch/build-000.sh
+./checksum.sh
+
