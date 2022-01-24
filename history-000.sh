@@ -71,3 +71,6 @@ echo "minos-one build system"
 
 ./sed/build-000.sh
 ./checksum.sh
+
+./tar/build-000.sh
+./checksum.sh
