@@ -2,10 +2,9 @@
 
 cd $LFS/usr/src/build
 
-tar -xxf $LFS/usr/src/sources/grep-3.7.tar.xz
+tar -xxf $LFS/usr/src/sources/gzip-1.10.tar.xz
 
-cd grep-3.7
-
+cd gzip-1.10
 
 ./configure --prefix=/usr --host=$LFS_TGT
 

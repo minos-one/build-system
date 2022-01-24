@@ -57,3 +57,9 @@ echo "minos-one build system"
 ./gawk/build-000.sh
 ./checksum.sh
 
+./grep/build-000.sh
+./checksum.sh
+
+./gzip/build-000.sh
+./checksum.sh
+
