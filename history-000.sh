@@ -74,3 +74,13 @@ echo "minos-one build system"
 
 ./tar/build-000.sh
 ./checksum.sh
+
+./xz/build-000.sh
+./checksum.sh
+
+./binutils/build-001.sh
+./checksum.sh
+
+./gcc/build-002.sh
+./checksum.sh
+
