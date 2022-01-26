@@ -2,6 +2,7 @@
 
 cd $LFS/usr/src/build
 
+rm -rf binutils-2.37
 tar -xxf $LFS/usr/src/sources/binutils-2.37.tar.xz
 
 cd binutils-2.37
