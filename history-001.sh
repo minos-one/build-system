@@ -17,3 +17,5 @@
 ./gettext/build-000.sh
 ./checksum.sh
 
+./bison/build-000.sh
+./checksum.sh
