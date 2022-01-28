@@ -13,7 +13,7 @@
 # ----------------------------------------------------------------
 
 LFS=/mnt/sda1/home/h3lix/workspace/mnt
-RBUILDS=/mnt/sda1/home/h3lix/workspace/rbuilds
+RBUILDS=/mnt/sda1/home/h3lix/workspace/mnt/usr/src/sources/build-system
 
 stamp=`cat ${RBUILDS}/md5.stamp`
 orig_files=(`awk '{print $1}' ${RBUILDS}/md5sums`)

@@ -14,3 +14,6 @@
 ./gcc/build-003.sh
 ./checksum.sh
 
+./gettext/build-000.sh
+./checksum.sh
+
