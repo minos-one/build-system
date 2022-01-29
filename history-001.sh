@@ -19,3 +19,9 @@
 
 ./bison/build-000.sh
 ./checksum.sh
+
+./perl/build-000.sh
+./checksum.sh
+
+./python/build-000.sh
+./checksum.sh
