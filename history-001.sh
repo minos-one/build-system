@@ -25,3 +25,6 @@
 
 ./python/build-000.sh
 ./checksum.sh
+
+./texinfo/build-000.sh
+./checksum.sh
