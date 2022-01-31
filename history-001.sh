@@ -14,3 +14,20 @@
 ./gcc/build-003.sh
 ./checksum.sh
 
+./gettext/build-000.sh
+./checksum.sh
+
+./bison/build-000.sh
+./checksum.sh
+
+./perl/build-000.sh
+./checksum.sh
+
+./python/build-000.sh
+./checksum.sh
+
+./texinfo/build-000.sh
+./checksum.sh
+
+./util-linux/build-000.sh
+./checksum.sh

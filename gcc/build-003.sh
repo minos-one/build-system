@@ -7,6 +7,8 @@ tar -xxf $LFS/usr/src/sources/gcc-11.2.0.tar.xz
 
 cd gcc-11.2.0
 
+ln -s gthr-posix.h libgcc/gthr-default.h
+
 mkdir -v build
 cd       build
 
