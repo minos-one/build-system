@@ -28,3 +28,6 @@
 
 ./texinfo/build-000.sh
 ./checksum.sh
+
+./util-linux/build-000.sh
+./checksum.sh
