@@ -16,10 +16,10 @@ LFS=/mnt/sda1/home/h3lix/workspace/mnt
 RBUILDS=/mnt/sda1/home/h3lix/workspace/rbuilds
 
 stamp=`cat ${RBUILDS}/md5.stamp`
-orig_files=(`awk '{print $1}' ${RBUILDS}/md5sums`)
-orig_md5=(`awk '{print $2}' ${RBUILDS}/md5sums`)
+orig_files=(`awk '{print $2}' ${RBUILDS}/md5sums`)
+orig_md5=(`awk '{print $1}' ${RBUILDS}/md5sums`)
 
-current_files=(`find $LFS -path $LFS/tmp -prune -o -path $LFS/proc -prune -o -path $LFS/sys -prune -o -path $LFS/usr/src -prune -o -path $LFS/tools -prune -o -type f -print`)
+current_files=(`find $LFS -path $LFS/tmp -prune -o -path $LFS/dev -prune -o -path $LFS/proc -prune -o -path $LFS/sys -prune -o -path $LFS/usr/src -prune -o -path $LFS/tools -prune -o -type f -print`)
 
 function find_orig_file {
     match=-1
