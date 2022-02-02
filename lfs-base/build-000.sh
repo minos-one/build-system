@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export LFS="/mnt/sda1/home/h3lix/workspace/mnt"
-export PATH=/mnt/sda1/home/h3lix/workspace/mnt/tools/sbin:/mnt/sda1/home/h3lix/workspace/mnt/tools/bin:/sbin:/usr/sbin:/bin:/usr/bin
+export PATH=$LFS/tools/sbin:$LFS/tools/bin:/sbin:/usr/sbin:/bin:/usr/bin
 
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 
@@ -28,6 +28,9 @@ mkfs -v -t ext4 tools.iso
 mkfs -v -t ext4 build.iso
 
 mkdir -pv $LFS
+
+mount -o loop $ISO_DIR/rootfs.iso $LFS
+
 mkdir -pv $LFS/lib/{firmware,modules}
 mkdir -v $LFS/boot
 mkdir -v $LFS/usr
@@ -35,7 +38,6 @@ mkdir -v $LFS/opt
 mkdir -v $LFS/tools
 mkdir -v $LFS/home
 
-mount -o loop $ISO_DIR/rootfs.iso $LFS
 mount -o loop $ISO_DIR/boot.iso $LFS/boot
 mount -o loop $ISO_DIR/firmware.iso $LFS/lib/firmware
 mount -o loop $ISO_DIR/modules.iso $LFS/lib/modules
